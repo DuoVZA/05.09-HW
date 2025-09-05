@@ -17,8 +17,13 @@ public:
 	}
 	~Car()
 	{
-		
+		if (model != nullptr)
+		{
+			delete[] model;
+		}
+
 	}
+
 };
 
 int main()
